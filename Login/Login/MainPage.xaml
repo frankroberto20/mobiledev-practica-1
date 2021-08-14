@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout>
+        <Image Source="HospiCloudIcon.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               Margin="0,50,0,0"
+               Scale="0.5"/>
+        <Entry x:Name="username"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Center"
+               WidthRequest="250"
+               Placeholder="User"
+               PlaceholderColor="Gray"
+               TextColor="Black"
+               BackgroundColor="#E1E6F0"/>
+        <Entry x:Name="password"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="Center"
+               WidthRequest="250"
+               Placeholder="Password"
+               PlaceholderColor="Gray"
+               TextColor="Black"
+               BackgroundColor="#E1E6F0"
+               IsPassword="True"/>
+        <Button Text="Login"
+                HorizontalOptions="CenterAndExpand"
+                Margin="0,50,0,0"
+                WidthRequest="200"
+                FontSize="Large"
+                TextColor="White"
+                BackgroundColor="#00C2CB"
+                CornerRadius="20"
+                Clicked="Button_Clicked"/>
+                
+    </StackLayout>
+
+</ContentPage>
