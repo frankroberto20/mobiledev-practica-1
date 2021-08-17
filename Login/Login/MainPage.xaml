@@ -10,7 +10,7 @@
                VerticalOptions="Center"
                Margin="0,50,0,0"
                Scale="0.5"/>
-        <Entry x:Name="username"
+        <Entry x:Name="usernameEntry"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="Center"
                WidthRequest="250"
@@ -18,7 +18,7 @@
                PlaceholderColor="Gray"
                TextColor="Black"
                BackgroundColor="#E1E6F0"/>
-        <Entry x:Name="password"
+        <Entry x:Name="passwordEntry"
                HorizontalOptions="CenterAndExpand"
                VerticalOptions="Center"
                WidthRequest="250"
@@ -35,7 +35,7 @@
                 TextColor="White"
                 BackgroundColor="#00C2CB"
                 CornerRadius="20"
-                Clicked="Button_Clicked"/>
+                Clicked="OnButtonClick"/>
                 
     </StackLayout>
 

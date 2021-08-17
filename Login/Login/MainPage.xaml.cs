@@ -15,15 +15,15 @@ namespace Login
             InitializeComponent();
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        private async void OnButtonClick(object sender, EventArgs e)
         {
-            if (username.Text == null || username.Text == "" || password.Text == null || password.Text == "")
+            if (string.IsNullOrEmpty(usernameEntry.Text) || string.IsNullOrEmpty(passwordEntry.Text))
             {
                 await DisplayAlert ("Error", "User and Password fields can't be empty", "OK");
             }
             else
             {
-                await DisplayAlert ("Welcome!", $"Hello {username.Text}", "OK");
+                await DisplayAlert ("Welcome!", $"Hello {usernameEntry.Text}", "OK");
             }
         }
     }
